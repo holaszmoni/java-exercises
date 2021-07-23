@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 
 public class Main {
+
     // ex 4
 
     public static void main(String[] args) {
@@ -21,7 +22,58 @@ public class Main {
         printSpeed(20,360,258, 600);
 
 
-    }
+
+
+        //Calculator op =new Calculator();
+
+
+// Pentru a testa aceasta metoda, mergeti in metoda main(), din clasa Main, si construiti un obiect de tip LogicalOp, si apelati metoda cu valori. Fiind o metoda de tip int, ea va returna o valoare, pe care noi trebuie sa o prindem si ca sa o vedem, trebuie sa o afisam in consola.
+           //ex 2 if-else
+            LogicalOp op = new LogicalOp();
+
+
+            int biggest = op.checkBiggerNumber(25,18);
+            System.out.println("The bigger number is: " + biggest);
+
+            String printText  = op.printText();
+            System.out.println(printText);
+
+            String printValue = op.printValue();
+            System.out.println(printValue);
+
+            String printCm = op.printCm();
+            System.out.println(printCm);
+
+            String printNum = op.printNum();
+            System.out.println(printNum);
+
+            int x = op.LogicalOp();
+
+            String isNumberEven = op.isNumberEven();
+            System.out.println(isNumberEven);
+
+            String isEligibleToVote = op.isEligibleToVote();
+            System.out.println(isEligibleToVote);
+
+             int max = op.printMax(6,10,5);
+             System.out.println("The bigger number is: " + max);
+
+         op.printNumbering(50);
+         op.printNegative(55);
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
 
     //ex 1
     public static void printMyName() {
