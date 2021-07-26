@@ -1,7 +1,5 @@
 package main;
 
-import java.net.StandardSocketOptions;
-
 public class LogicalOp {
     //ex3 if-else
     public static int checkBiggerNumber(int x, int y) {
@@ -124,7 +122,7 @@ public class LogicalOp {
 
     //ex 1 for
     public void printNumbering(int n) {
-        for(int i=n;i<100; i++) {
+        for (int i = n; i < 100; i++) {
             System.out.print(i + " ");
         }
         System.out.println();
@@ -132,21 +130,236 @@ public class LogicalOp {
 
     //ex 2 for
     public void printNegative(int n) {
-        if(n>-100){
-            for(int i=n;i>-100; i--) {
+        if (n > -100) {
+            for (int i = n; i > -100; i--) {
                 System.out.print(i + " ");
             }
-        }
-        else{
-            for(int i=n;i<-100; i++) {
+        } else {
+            for (int i = n; i < -100; i++) {
                 System.out.print(i + " ");
             }
         }
 
     }
+
     //ex 3 for
-    public void Numbering(int x, int y) {
+    public void Numbering(int z, int y) {
+        System.out.println();
+        for (int i = z; i <= y; i++) {
+            System.out.print(i + " ");
+
+        }
 
     }
+
+    //ex 4 for
+    public void printNumbers(int x, int y) {
+        System.out.println();
+        if (x > y) {
+            for (int i = y; i <= x; i++) {
+                System.out.print(i + " ");
+            }
+        } else if (x < y) {
+            for (int i = x; i <= y; i++) {
+                System.out.print(i + " ");
+            }
+        }
+
+    }
+
+    //ex 5 for
+    public void printEven() {
+        System.out.println();
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+
+            }
+        }
+    }
+
+    //ex 6 for
+    public void printOdd() {
+        System.out.println();
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
+    //    //ex 7 for
+    public static int Sum(int x) {
+        System.out.println();
+        int total = 0;
+        for (int i = 0; i <= x; i++) {
+            total = total + i;
+        }
+        return total;
+    }
+
+    //ex 8 for
+    public static int Med(int z) {
+        System.out.println();
+        int total = 0;
+        for (int i = z; i <= 100; i++) {
+            total = total + i;
+        }
+        return (total / (100 - z));
+    }
+
+    //ex 9 for
+    public void printTipar(String z) {
+        for (int i = 0; i < 7; i++) {
+            System.out.println();
+            for (int j = 7; j > i; j--) {
+                System.out.print(z);
+            }
+        }
+    }
+
+    //ex 1 while
+    public void Numbers(int t) {
+        System.out.println();
+        while (t <= 100) {
+            System.out.print(t + " ");
+            t++;
+        }
+    }
+
+    //ex 2 while
+    public void Negative(int u) {
+        System.out.println();
+        while (u >= -100) {
+            System.out.print(u + " ");
+            u--;
+        }
+    }
+
+    //ex 3 while
+    public void Parameters(int a, int b) {
+        System.out.println();
+        int i = a;
+        while (i <= b) {
+            System.out.print(i + " ");
+            i++;
+        }
+
+    }
+
+    //ex 4 while
+    public void Bigger(int m, int n) {
+        System.out.println();
+        // int i = Math.max(m, n);
+        while (m <= n) {
+            System.out.print(m + " ");
+            m++;
+        }
+        while (m >= n) {
+            System.out.print(n + " ");
+            n++;
+        }
+    }
+
+    //ex 5 while
+    public void Even() {
+        System.out.println();
+
+        int N = 1;
+        while (N <= 100) {
+            if (N % 2 == 0) {
+                System.out.print(N + " ");
+            }
+            N++;
+        }
+    }
+
+    //ex 6 while
+    public void Odd() {
+        System.out.println();
+
+        int i = 1;
+        while (i <= 100) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+            }
+            i++;
+        }
+    }
+
+    //    //ex 7 while
+//    public static void SumAverage(){
+//        int x = 111;
+//        int y = 8899;
+//
+//        }
+    //ex 8 while
+//    public static int Division(int a, int b) {
+//        System.out.println();
+//        for (int i = 1; i <= a; i++) {
+//
+//            if (i % 7 == 0) {
+//            }
+//            return (i);
+//        }
+//    }
+
+    //ex 9 while
+    public static void Fibonacci(){
+        System.out.println();
+        int n=20, firstTerm = 0, secondTerm = 1;
+        System.out.println("The first" + " "+ n +" " + "Fibonacci numbers are:");
+        for(int i=1; i<=n; i++){
+            System.out.print(firstTerm + ", ");
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm= nextTerm;
+        }
+    }
+
+
+
+    //ex 10 while
+    public static void CozaLozaWoza(int x, int y) {
+        System.out.println();
+        boolean choose;
+
+        for (int i = 1; i <= x; i++) {
+            choose = false;
+            if (i % 3 == 0) {
+                System.out.print("Coza");
+                choose = true;
+            }
+            if (i % 5 == 0) {
+                System.out.print("Loza");
+                choose = true;
+            }
+            if (i % 7 == 0) {
+                System.out.print("Woza");
+                choose = true;
+            }
+            if(!choose){
+                System.out.print(i);
+            }
+            System.out.print(" ");
+            if(i%11==0) {
+                System.out.println();
+            }
+        }
+        System.out.println();
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -60,6 +60,24 @@ public class Main {
 
          op.printNumbering(50);
          op.printNegative(55);
+         op.Numbering(10, 25);
+         op.printNumbers(5,35);
+         op.printEven();
+         op.printOdd();
+
+         System.out.print(op.Sum(2));
+         System.out.print(op.Med(91));
+         op.printTipar("*");
+         op.Numbers(10);
+         op.Negative(-50);
+         op.Parameters(10,60);
+         op.Bigger(20,10);
+         op.Even();
+         op.Odd();
+         op.CozaLozaWoza(110, 11);
+         //op.Division(10, 21);
+        op.Fibonacci();
+
 
 
 
