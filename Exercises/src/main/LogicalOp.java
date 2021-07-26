@@ -1,5 +1,7 @@
 package main;
 
+import java.util.Arrays;
+
 public class LogicalOp {
     //ex3 if-else
     public static int checkBiggerNumber(int x, int y) {
@@ -305,18 +307,17 @@ public class LogicalOp {
 //    }
 
     //ex 9 while
-    public static void Fibonacci(){
+    public static void Fibonacci() {
         System.out.println();
-        int n=20, firstTerm = 0, secondTerm = 1;
-        System.out.println("The first" + " "+ n +" " + "Fibonacci numbers are:");
-        for(int i=1; i<=n; i++){
+        int n = 20, firstTerm = 0, secondTerm = 1;
+        System.out.println("The first" + " " + n + " " + "Fibonacci numbers are:");
+        for (int i = 1; i <= n; i++) {
             System.out.print(firstTerm + ", ");
             int nextTerm = firstTerm + secondTerm;
             firstTerm = secondTerm;
-            secondTerm= nextTerm;
+            secondTerm = nextTerm;
         }
     }
-
 
 
     //ex 10 while
@@ -338,18 +339,31 @@ public class LogicalOp {
                 System.out.print("Woza");
                 choose = true;
             }
-            if(!choose){
+            if (!choose) {
                 System.out.print(i);
             }
             System.out.print(" ");
-            if(i%11==0) {
+            if (i % 11 == 0) {
                 System.out.println();
             }
         }
         System.out.println();
     }
+    //ex 7 arrays
+    public static void Grila() {
+        int [][]a = new int[10][10];
+        for(int i = 0; i < 10; i++)
+        {
+            for(int j = 0; j < 10; j++)
+            {
+                System.out.printf("%2d ", a[i][j]);
+            }
+            System.out.println();
+        }
+    }
 
 }
+
 
 
 

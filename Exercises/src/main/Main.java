@@ -77,6 +77,9 @@ public class Main {
          op.CozaLozaWoza(110, 11);
          //op.Division(10, 21);
         op.Fibonacci();
+        op.Grila();
+
+
 
 
 
