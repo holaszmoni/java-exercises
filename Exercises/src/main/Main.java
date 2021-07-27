@@ -79,18 +79,22 @@ public class Main {
         op.Fibonacci();
         op.Grila();
 
+        int [] arr =new int[100];
+        op.writeOnArray(arr);
+
+        int [] arr2 = new int[75];
+        arr2 = op.evenArr(arr2);
+        for(int i=0; i<arr2.length; i++)
+            System.out.println(arr2[i]);
+
+
+        int []arr3 = {5,6,7,8,9,10,11,12};
+        System.out.println("Value: "+op.Value(arr3));
 
 
 
 
-
-
-
-
-
-
-
-        }
+    }
 
 
 

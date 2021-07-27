@@ -349,6 +349,35 @@ public class LogicalOp {
         }
         System.out.println();
     }
+    //ex 2 arrays
+    public void writeOnArray(int []arr){
+        if(arr.length>100) {
+            System.out.println("No space!");
+        }else{
+            for(int i=0; i<100; i++){
+                arr[i] = i +1;
+                System.out.println(arr[i]);
+            }
+        }
+    }
+    // ex 3 arrays
+    public int [] evenArr(int[]arr){
+        int i1 =0;
+        for(int i =1; i<=100; i++){
+            if(i%2==0){
+                arr[i1++] =1;
+            }
+        }
+        return arr;
+    }
+    //ex 4 arrays
+    public double Value(int[]arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        return (double) sum / arr.length;
+    }
     //ex 7 arrays
     public static void Grila() {
         int [][]a = new int[10][10];
