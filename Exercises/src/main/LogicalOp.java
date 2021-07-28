@@ -1,6 +1,8 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class LogicalOp {
     //ex3 if-else
@@ -349,48 +351,89 @@ public class LogicalOp {
         }
         System.out.println();
     }
+
     //ex 2 arrays
-    public void writeOnArray(int []arr){
-        if(arr.length>100) {
+    public void writeOnArray(int[] arr) {
+        if (arr.length > 100) {
             System.out.println("No space!");
-        }else{
-            for(int i=0; i<100; i++){
-                arr[i] = i +1;
+        } else {
+            for (int i = 0; i < 100; i++) {
+                arr[i] = i + 1;
                 System.out.println(arr[i]);
             }
         }
     }
+
     // ex 3 arrays
-    public int [] evenArr(int[]arr){
-        int i1 =0;
-        for(int i =1; i<=100; i++){
-            if(i%2==0){
-                arr[i1++] =1;
+    public int[] evenArr(int[] arr) {
+        int i1 = 0;
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                arr[i1++] = 1;
             }
         }
         return arr;
     }
+
     //ex 4 arrays
-    public double Value(int[]arr) {
+    public double Value(int[] arr) {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
         return (double) sum / arr.length;
     }
+
+    //ex 5 arrays
+
+    public boolean Strings1(String[] strings, String str) {
+        boolean find = false;
+        for (int i = 0; i < strings.length; i++) {
+            if (strings[i].equals(str)) {
+                find = true;
+                break;
+            }
+        }
+        return find;
+    }
+
+    //ex 6 arrays
+    public int pozitie(int[] arr, int number) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == number) {
+                return i + 1;
+            }
+        }
+        return -1;
+    }
+
     //ex 7 arrays
     public static void Grila() {
-        int [][]a = new int[10][10];
-        for(int i = 0; i < 10; i++)
-        {
-            for(int j = 0; j < 10; j++)
-            {
+        int[][] a = new int[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
                 System.out.printf("%2d ", a[i][j]);
             }
             System.out.println();
         }
     }
 
+    //ex 1 lists
+    private static void populateIntList(List<Integer> variables) {
+        variables.add(1);
+        variables.add(2);
+        variables.add(3);
+        variables.add(4);
+        variables.add(5);
+        variables.add(6);
+
+    }
+
+    //ex 2 lists
+    private static void Elements(List<Integer> list) {
+        for (Integer item : list)
+            System.out.println(item);
+    }
 }
 
 

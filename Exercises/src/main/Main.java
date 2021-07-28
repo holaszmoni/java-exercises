@@ -1,6 +1,9 @@
 package main;
 
+import javax.swing.*;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Main {
@@ -90,6 +93,19 @@ public class Main {
 
         int []arr3 = {5,6,7,8,9,10,11,12};
         System.out.println("Value: "+op.Value(arr3));
+
+        String[] arrOfStr = {"carti","caiete","pixuri","creioane","pensule"};
+        String str = "creioane";
+        System.out.println(op.Strings1(arrOfStr,str));
+
+        int number = 16;
+        System.out.println(op.pozitie(arr3,number));
+
+        List<Integer>variable =new ArrayList<>();
+        System.out.println(variable);
+
+
+
 
 
 
